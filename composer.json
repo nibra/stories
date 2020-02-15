@@ -1,0 +1,40 @@
+{
+    "name": "nibra/stories",
+    "description": "Attempt to create automated Acceptance Tests",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Niels Braczek",
+            "email": "nbraczek@bsds.de"
+        }
+    ],
+    "require": {
+        "datasift/storyplayer": "^2.3"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master"
+    },
+    "scripts": {
+        "stories-start": [
+            "bin/browsermob-proxy.sh start",
+            "bin/selenium-server.sh start"
+        ],
+        "stories-status": [
+            "bin/browsermob-proxy.sh status",
+            "bin/selenium-server.sh status"
+        ],
+        "stories-monitor": [
+            "bin/browsermob-proxy.sh monitor",
+            "bin/selenium-server.sh monitor"
+        ],
+        "stories-restart": [
+            "bin/browsermob-proxy.sh restart",
+            "bin/selenium-server.sh restart"
+        ],
+        "stories-stop": [
+            "bin/browsermob-proxy.sh stop",
+            "bin/selenium-server.sh stop"
+        ]
+    }
+}

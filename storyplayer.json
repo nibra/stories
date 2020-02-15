@@ -1,0 +1,22 @@
+{
+  "defaults": [
+    "--system-under-test", "stories-1.0",
+    "play-story", "tests/stories/"
+  ],
+  "storySettings": {
+    "modules": {
+      "http": {
+        "remotePage": {
+          "title": "Home - BBC News"
+        }
+      }
+    }
+  },
+  "moduleSettings": {
+    "device": {
+      "browsermob": {
+        "enable": false
+      }
+    }
+  }
+}
